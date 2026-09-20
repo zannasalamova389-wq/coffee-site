@@ -1,8 +1,8 @@
 const orderButton = document.querySelector('#order');
-const addButtons = document.querySelector('.add');
+const addButtons = document.querySelectorAll('.add');
 let cartCount = 0;
 //Кнопка <<Заказать кофе
-orderButton.addEventListener('click',< function(){
+orderButton.addEventListener('click', function(){
 alert('Спасибо за заказ! Мы свяяжимся с вам.');
 });
 // Кнопки <<В корзину>>
