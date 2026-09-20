@@ -11,6 +11,6 @@ btn.addEventListener('click', function() {
 cartCount = cartCount +1;
 btn.textContent = 'В корзине √ ';
 btn.style.backgroundColor = '#4a2c1a';
-alert('Товар в корзине: ' + cartCount);
+document.querySelector('#cart-count').textContent = cartCount;
 });
 });
