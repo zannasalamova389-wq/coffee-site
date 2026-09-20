@@ -9,7 +9,7 @@ alert('Спасибо за заказ! Мы свяяжимся с вам.');
 addButtons.forEach(function(btn) {
 btn.addEventListener('click', function() {
 cartCount = cartCount +1;
-btn.textContent = 'В корзине ✅ ';
+btn.textContent = 'В корзине  ✔️ ';
 btn.style.backgroundColor = '#4a2c1a';
 alert('Товар в корзине: ' + cartCount);
 });
