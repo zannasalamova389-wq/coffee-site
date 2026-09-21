@@ -1,16 +1,19 @@
 const orderButton = document.querySelector('#order');
-const addButtons = document.querySelectorAll('.add');
-let cartCount = 0;
-//Кнопка <<Заказать кофе
-orderButton.addEventListener('click', function(){
-alert('Спасибо за заказ! Мы свяяжимся с вам.');
+const addButton = document.querySelectorAll('.add');
+const cartCountSpan = document.querySelector('#cart-count');
+let carCount = 0;
+//Кнопка <<Заказать  кофе>>
+orderButton.addEventListener('click', function() {
+alert('Спасибо за заказ! Мы свяжемся с вами.');
 });
-// Кнопки <<В корзину>>
-addButtons.forEach(function(btn) {
+//Кнопки <<В корзину>>
+addButton.forEach(function(btn) {
 btn.addEventListener('click', function() {
-cartCount = cartCount +1;
-btn.textContent = 'В корзине √ ';
+carCount = carCount + 1;
+btn.textContent = 'В корзине ✔️';
 btn.style.backgroundColor = '#4a2c1a';
-document.querySelector('#cart-count').textContent = cartCount;
+btn.style.color = '#fff';
+btn.disabled = true; // блокируем повторные  нажатия
+cartCountSpan.textContent = carCount;
 });
 });
