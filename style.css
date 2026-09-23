@@ -131,3 +131,34 @@ color: #fff;
 font-size: 16px;
 margin-top: 5px;
 }
+#cart-count {
+color: #d4a373;
+font-weight: bold';
+}
+.counter {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+}
+.counter button {
+width: 32px;
+height: 32px;
+font-size: 18px;
+font-weight: bold;
+background-color: #d4a373;
+color: #fff;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+.counter button:hover {
+background-color: #b8864a;
+}
+.counter .qty {
+font-size: 18px;
+font-weight: bold;
+color: #4a2c1a;
+min-width: 20px;
+text-align: center;
+}
